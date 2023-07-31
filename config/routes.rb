@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :registrations => 'registrations' }
+  post '/charge', to: 'payments#create'
+  resources :payments
+  devise_for :users
   root 'welcome#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
