@@ -14,17 +14,15 @@ class PaymentsController < ApplicationController
 
       charge = Stripe::Charge.create({
         :customer => customer.id,
-        :amount => 500,
+        :amount => 1000,
         :description => 'Description of your product',
-        :currency => 'usd'
+        :currency => 'eur'
       })
 
       flash[:success] = 'Payment successful!'
-      # Redirect or show a success page after successful payment
     rescue Stripe::CardError => e
       flash[:error] = e.message
       redirect_to new_payment_path
-      # Redirect or show an error page if there's an issue with the payment
     end
   end
 end
