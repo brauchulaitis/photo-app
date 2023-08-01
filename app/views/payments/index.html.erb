@@ -10,4 +10,17 @@
     data-amount="1000"
     data-currency="eur">
   </script>
+
+<label class="amount">
+  <span>Amount: €20.00</span>
+</label>
+
+<script
+src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+data-description="A month's subscription"
+data-amount="2000"
+data-currency="eur">
+</script>
+
 <% end %>
