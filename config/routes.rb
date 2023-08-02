@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   post '/charge', to: 'payments#create'
   resources :payments
   devise_for :users
