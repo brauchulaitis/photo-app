@@ -96,6 +96,7 @@ GEM
       ssrf_filter (~> 1.0)
     commonjs (0.2.7)
     concurrent-ruby (1.2.2)
+    connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -206,6 +207,10 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis (5.0.6)
+      redis-client (>= 0.9.0)
+    redis-client (0.15.0)
+      connection_pool
     regexp_parser (2.8.1)
     reline (0.3.5)
       io-console (~> 0.5)
@@ -297,6 +302,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
+  redis
   sass-rails
   selenium-webdriver
   sprockets-rails

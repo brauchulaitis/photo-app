@@ -46,6 +46,7 @@ gem 'pg'
 gem 'stripe'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'redis'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
