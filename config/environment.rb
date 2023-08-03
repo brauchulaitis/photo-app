@@ -7,9 +7,9 @@ Rails.application.initialize!
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
    :tls => true,
-   :address => "smtp.localhost:3000",
+   :address => "smtp.photo-app-9cgh.onrender.com.",
    :port => 587,
-   :domain => "localhost:3000",
+   :domain => "photo-app-9cgh.onrender.com.",
    :authentication => :login,
    :user_name => "[username]",
    :password => "[password]"
